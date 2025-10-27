@@ -1,65 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Panier - Ma Boutique</title>
-  <link rel="stylesheet" href="../styles/panier.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier</title>
+    <link rel="stylesheet" href="assets/css/panier.css">
 </head>
 <body>
+    <main class="cart-container">
+        <div class="cart-header">
+            <h1>Mon Panier</h1>
+            <button class="continue-btn">← Continuer mes achats</button>
+        </div>
 
-  <header>
-    <div class="logo">
-      <h1>E-Shop</h1>
-    </div>
+        <div class="cart-table">
+            <div class="cart-header-row">
+                <span>Produit</span>
+                <span>Prix</span>
+                <span>Quantité</span>
+                <span>Total</span>
+            </div>
 
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="products (2).html">Produits</a>
-      <a href="panier.html">Panier</a>
-      <a href="prodDetails.html">À propos des produits</a>
-      <a href="Footer.html"></a>
-      <a href="Header.html"></a>
-    </nav>
-  </header>
+            <div class="cart-item">
+                <div class="product">
+                    <img src="assets/images/iphone.webp" alt="iphone 17">
+                    <div>
+                        <h3>iphone 17</h3>
+                        <p>#21432325434532</p>
+                        <p>Couleur : Blanc &nbsp;|&nbsp; <strong>Extras :</strong> Sport Tire + Battery High 100</p>
+                    </div>
+                </div>
+                <div class="price">484.99€</div>
+                <div class="quantity">
+                    <button class="qty-btn">−</button>
+                    <span>1</span>
+                    <button class="qty-btn">+</button>
+                </div>
+                <div class="total">484.99€</div>
+            </div>
 
-  <main>
-    <h2>Mon Panier</h2>
+            <div class="cart-item">
+                <div class="product">
+                    <img src="assets/images/airpod-better.png" alt="airpod-better">
+                    <div>
+                        <h3>airpod-better</h3>
+                        <p>#21432325463532</p>
+                        <p>Couleur : Noir &nbsp;|&nbsp; <strong>Extras :</strong> Full Tire</p>
+                    </div>
+                </div>
+                <div class="price">245.99€</div>
+                <div class="quantity">
+                    <button class="qty-btn">−</button>
+                    <span>2</span>
+                    <button class="qty-btn">+</button>
+                </div>
+                <div class="total">491,98€</div>
+            </div>
+        </div>
 
-    <table class="table-panier">
-      <thead>
-        <tr>
-          <th>Produit</th>
-          <th>Prix unitaire</th>
-          <th>Quantité</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="assets/images/iphone.webp" alt="Produit 1" width="50"> Iphone 17</td>
-          <td>$999</td>
-          <td>2</td>
-          <td>$1998 </td>
-        </tr>
-        <tr>
-          <td><img src="assets/images/earbuds.webp" alt="Produit 2" width="50"> Earbuds pro</td>
-          <td>$15</td>
-          <td>1</td>
-          <td>$15</td>
-        </tr>
-      </tbody>
-    </table>
+        <div class="shipping">
+            <h2>Choisir le mode de livraison :</h2>
+            <label><input type="radio" name="shipping" checked> Retrait en magasin (1h 20 min) — <strong>Gratuit</strong></label>
+            <label><input type="radio" name="shipping"> Livraison à domicile (2 jours) — <strong>9.90€</strong></label>
+        </div>
 
-    <div class="total-panier">
-      <p><strong>Total :</strong> $2013</p>
-      <button>Passer la commande</button>
-    </div>
-  </main>
+        <div class="summary">
+            <div class="line"><span>Sous-total TTC</span><span>1954.97€</span></div>
+            <div class="line"><span>Livraison</span><span>Gratuite</span></div>
+            <div class="total-line"><span>Total</span><span>976.97€</span></div>
+            <button class="checkout">Commander</button>
+        </div>
+    </main>
 
-  <footer>
-    <p>&copy; 2025, 4GI - HTML CSS E-commerce site</p>
-  </footer>
-
+    <script src="assets/js/panier.js"></script>
 </body>
 </html>
